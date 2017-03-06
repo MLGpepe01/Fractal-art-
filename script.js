@@ -1,23 +1,31 @@
 TinyTurtle.apply(window, [undefined, 400, 400]);
 
-function square(){
-forward(50);
+
+
+
+
+
+
+
+
+function square(sideLegnth){
+forward(sideLegnth);
 right(90);
-forward(50);
+forward(sideLegnth);
 right(90);
-forward(50);
+forward(sideLegnth);
 right(90);
-forward(50);
+forward(sideLegnth);
 right(90);
-forward(50);
+forward(sideLegnth);
 }
-function triangle(){
+function triangle(sideLegnth){
 right(120);
-forward(50);
+forward(sideLegnth);
 right(120);
-forward(50);
+forward(sideLegnth);
 right(120);
-forward(50);
+forward(sideLegnth);
 right(60);
 stamp();
 }
@@ -26,21 +34,48 @@ stamp();
 // Type your function call below
 
 
-function hexagon(){
-triangle();
-triangle();
-triangle();
-triangle();
-triangle();
-triangle();
-right(90)
+function hexagon(sideLegnth){
+triangle(sideLegnth);
+triangle(sideLegnth);
+triangle(sideLegnth);
+triangle(sideLegnth);
+triangle(sideLegnth);
+triangle(sideLegnth);
+
 }
 
-hexagon()
-hexagon()
-hexagon()
-hexagon()
-hexagon()
+function rectangle(sideLegnth){
+forward(sideLegnth/2);
+right(90);
+forward(sideLegnth);
+right(90);
+forward(sideLegnth/2);
+right(90);
+forward(sideLegnth);
+    stamp()
+}
 
+function pentagon (sideLegnth){
+     forward(sideLegnth);
+    right(72);
+    forward(sideLegnth);
+    right(72);
+    forward(sideLegnth);
+    right(72)
+    forward(sideLegnth);
+    right(72);
+    forward(sideLegnth);
+    right(73)
+    
+}
+ 
+ function house (sideLegnth){
+     
+     square(sideLegnth);
+     right(270)
+     triangle(sideLegnth);
+     right(90)
+     
+ }
 
-
+house(90)
