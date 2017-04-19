@@ -20,13 +20,14 @@ right(90);
 forward(sideLegnth);
 }
 function triangle(sideLegnth){
-right(120);
-forward(sideLegnth);
-right(120);
-forward(sideLegnth);
-right(120);
-forward(sideLegnth);
-right(60);
+for(
+        var i =0; i<3; i =i+1){
+        forward(sideLegnth);
+        
+          right(120);  
+            
+        }
+
 stamp();
 }
 
@@ -35,14 +36,17 @@ stamp();
 
 
 function hexagon(sideLegnth){
-triangle(sideLegnth);
-triangle(sideLegnth);
-triangle(sideLegnth);
-triangle(sideLegnth);
-triangle(sideLegnth);
-triangle(sideLegnth);
+    for(
+        var i =0; i<6; i =i+1){
+        triangle(sideLegnth)
+        right(45)
+            
+            
+        }
+        
 
-}
+
+};
 
 function rectangle(sideLegnth){
 forward(sideLegnth/2);
@@ -78,4 +82,14 @@ function pentagon (sideLegnth){
      
  }
 
-house(90)
+     function kek (X,Y){
+         
+          for(
+        var i =0; i<15; i =i+1){
+        hexagon(X)
+        right(Y)
+            
+            
+        }
+     }
+    kek(200,5)
